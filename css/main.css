@@ -4,7 +4,16 @@ body {
 
 .main {
   width: 80%;
+  height: 80%;
   margin: 0 auto;
   color: white;
+}
+
+.main:hover {
+  background-color: lightgray;
+}
+
+.main .main__paragraph {
+  text-align: justify;
 }
 /*# sourceMappingURL=main.css.map */
