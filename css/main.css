@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  background-color: blue;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
