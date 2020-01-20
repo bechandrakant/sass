@@ -4,16 +4,15 @@ body {
 
 .main {
   width: 80%;
-  height: 80%;
   margin: 0 auto;
   color: white;
 }
 
-.main:hover {
-  background-color: lightgray;
-}
-
 .main .main__paragraph {
   text-align: justify;
+}
+
+.main .main__paragraph:hover {
+  font-style: italic;
 }
 /*# sourceMappingURL=main.css.map */

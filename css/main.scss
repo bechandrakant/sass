@@ -13,12 +13,15 @@ body {
 
 .main {
   width: $content-width;
-  height: $content-height;
   margin: 0 auto;
   color: map-get($color, text);
 
   // interpolation #{&}
   #{&}__paragraph {
     text-align: justify;
+
+    &:hover {
+      font-style: italic;
+    }
   }
 }
