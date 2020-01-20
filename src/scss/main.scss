@@ -15,7 +15,7 @@ body {
   @include flexCenter (row);
   
   // interpolation #{&}
-  #{&}__paragraph {  
+  #{&}__paragraph1 {  
     padding: 5px;
     border: 1px solid red;
     text-align: justify;
@@ -25,8 +25,17 @@ body {
     }
   }
 
+  #{&}__paragraph2 {
+    @extend .main__paragraph1;
+
+    &:hover {
+      background-color: color(accent);
+      color: white;
+    }
+  }
+
   @include mobile {
-    flex-direction: column;
+    @include flexCenter(column);
   }
 }
 
