@@ -38,6 +38,15 @@ body {
   font-style: italic;
 }
 
+@media (max-width: 600px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .light {
   background: white;
 }

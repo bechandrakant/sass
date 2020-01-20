@@ -24,6 +24,10 @@ body {
       font-style: italic;
     }
   }
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .light {
