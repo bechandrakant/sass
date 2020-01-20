@@ -1,0 +1,13 @@
+// variable names start with dollar sign
+$content-width: 80%;
+$topPadding: 20px;
+
+// Nesting
+$color : (
+  primary: lightgray,
+  accent: orange,
+  text: green
+);
+
+// Media
+$mobileWidth: 600px;
