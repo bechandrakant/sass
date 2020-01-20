@@ -25,3 +25,7 @@ body {
     }
   }
 }
+
+.light {
+  @include theme($light-theme: true);
+}

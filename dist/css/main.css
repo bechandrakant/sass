@@ -5,14 +5,14 @@
 }
 
 body {
-  background-color: blue;
+  background-color: lightgray;
 }
 
 .main {
   width: 80%;
   margin: 0 auto;
   padding-top: 20px;
-  color: white;
+  color: green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,5 +36,9 @@ body {
 
 .main .main__paragraph:hover {
   font-style: italic;
+}
+
+.light {
+  background: white;
 }
 /*# sourceMappingURL=main.css.map */
