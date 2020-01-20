@@ -1,6 +1,7 @@
 @import './resets';
 @import './variables';
 @import './functions';
+@import './mixins';
 
 body {
   background-color: color(primary);
@@ -11,9 +12,12 @@ body {
   margin: 0 auto;
   padding-top: $topPadding;
   color: color(text);
-
+  @include flexCenter;
+  
   // interpolation #{&}
-  #{&}__paragraph {
+  #{&}__paragraph {  
+    padding: 5px;
+    border: 1px solid red;
     text-align: justify;
 
     &:hover {
