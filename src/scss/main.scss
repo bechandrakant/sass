@@ -1,6 +1,8 @@
 @import './resets';
 @import './variables';
 @import './functions';
+@import './mixins';
+@import './operations'
 
 body {
   background-color: color(primary);
@@ -11,13 +13,33 @@ body {
   margin: 0 auto;
   padding-top: $topPadding;
   color: color(text);
-
+  @include flexCenter (row);
+  
   // interpolation #{&}
-  #{&}__paragraph {
+  #{&}__paragraph1 {  
+    padding: 5px;
+    border: 1px solid red;
     text-align: justify;
 
     &:hover {
       font-style: italic;
     }
   }
+
+  #{&}__paragraph2 {
+    @extend .main__paragraph1;
+
+    &:hover {
+      background-color: color(accent);
+      color: white;
+    }
+  }
+
+  @include mobile {
+    @include flexCenter(column);
+  }
+}
+
+.light {
+  @include theme($light-theme: true);
 }

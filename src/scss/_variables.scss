@@ -4,6 +4,10 @@ $topPadding: 20px;
 
 // Nesting
 $color : (
-  primary: blue,
-  text: white
+  primary: lightgray,
+  accent: orange,
+  text: green
 );
+
+// Media
+$mobileWidth: 600px;

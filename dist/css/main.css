@@ -5,21 +5,63 @@
 }
 
 body {
-  background-color: blue;
+  background-color: lightgray;
 }
 
 .main {
   width: 80%;
   margin: 0 auto;
   padding-top: 20px;
-  color: white;
+  color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.main .main__paragraph {
+.main .main__paragraph1, .main .main__paragraph2 {
+  padding: 5px;
+  border: 1px solid red;
   text-align: justify;
 }
 
-.main .main__paragraph:hover {
+.main .main__paragraph1:hover, .main .main__paragraph2:hover {
   font-style: italic;
+}
+
+.main .main__paragraph2:hover {
+  background-color: orange;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.light {
+  background: white;
 }
 /*# sourceMappingURL=main.css.map */
