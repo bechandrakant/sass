@@ -12,7 +12,7 @@ body {
   margin: 0 auto;
   padding-top: $topPadding;
   color: color(text);
-  @include flexCenter;
+  @include flexCenter (row);
   
   // interpolation #{&}
   #{&}__paragraph {  
