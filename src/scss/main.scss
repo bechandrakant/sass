@@ -1,0 +1,23 @@
+@import './resets';
+@import './variables';
+@import './functions';
+
+body {
+  background-color: color(primary);
+}
+
+.main {
+  width: $content-width;
+  margin: 0 auto;
+  padding-top: $topPadding;
+  color: color(text);
+
+  // interpolation #{&}
+  #{&}__paragraph {
+    text-align: justify;
+
+    &:hover {
+      font-style: italic;
+    }
+  }
+}

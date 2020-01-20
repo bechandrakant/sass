@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: blue;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  color: white;
+}
+
+.main .main__paragraph {
+  text-align: justify;
+}
+
+.main .main__paragraph:hover {
+  font-style: italic;
+}
+/*# sourceMappingURL=main.css.map */
